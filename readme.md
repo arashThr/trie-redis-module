@@ -1,5 +1,8 @@
+# Intro
+Read about this project on my [blog](https://arashtaher.wordpress.com/2019/06/07/trie-implementation-as-redis-module/)
+
 # Run
-- Create Redis module: `make module.so`
+- Create Redis module: `make`
 - Run tests: `make tests`
 
 # Usage
