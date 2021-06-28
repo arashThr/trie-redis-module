@@ -64,7 +64,8 @@ TrieNode *Trie::remove(string key, TrieNode *node, int depth)
         if (node->isEndOfWord)
             node->isEndOfWord = false;
 
-        if (isNodeEmpty(node)) {
+        if (isNodeEmpty(node))
+        {
             delete node;
             node = nullptr;
         }
@@ -73,8 +74,9 @@ TrieNode *Trie::remove(string key, TrieNode *node, int depth)
 
     int index = getIndex(key[depth]);
     node->children[index] = remove(key, node->children[index], depth + 1);
-    
-    if (isNodeEmpty(node) && !node->isEndOfWord && depth != 0) {
+
+    if (isNodeEmpty(node) && !node->isEndOfWord && depth != 0)
+    {
         delete node;
         node = nullptr;
     }

@@ -1,4 +1,5 @@
 # Intro
+Trie data structure for Redis
 Read about this project on my [blog](https://arashtaher.wordpress.com/2019/06/07/trie-implementation-as-redis-module/)
 
 # Run
